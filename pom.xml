@@ -8,6 +8,14 @@
     <artifactId>drrename-commons</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <licenses>
+        <license>
+            <name>GNU Affero General Public License (AGPL) version 3.0</name>
+            <url>https://www.gnu.org/licenses/agpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
         <maven.javadoc.skip>true</maven.javadoc.skip>
@@ -63,5 +71,15 @@
             </plugin>
         </plugins>
     </build>
+
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/drrename/drrename-commons</url>
+        </repository>
+    </distributionManagement>
+
 
 </project>
