@@ -20,7 +20,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <github-user>drrename</github-user>
-        <github-repo>drrename.commons</github-repo>
+        <github-repo>drrename-commons</github-repo>
         <java.version>17</java.version>
         <javafx.version>19</javafx.version>
         <lombok.version>1.18.24</lombok.version>
@@ -73,6 +73,12 @@
     </build>
 
 
+    <scm>
+        <connection>scm:git:https://github.com/${github-user}/${github-repo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${github-user}/${github-repo}.git</developerConnection>
+        <url>https://github.com/${github-user}/${github-repo}</url>
+        <tag>HEAD</tag>
+    </scm>
     <distributionManagement>
         <repository>
             <id>github</id>
