@@ -26,17 +26,21 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
+    <scm>
+        <connection>scm:git:https://github.com/${github-user}/${github-repo}.git</connection>
+        <developerConnection>scm:git:git@github.com:${github-user}/${github-repo}.git</developerConnection>
+        <url>https://github.com/${github-user}/${github-repo}</url>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/drrename/drrename-commons</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-fxml</artifactId>
-            <version>${javafx.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-controls</artifactId>
-            <version>${javafx.version}</version>
-        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -48,6 +52,16 @@
             <version>${lombok.version}</version>
             <scope>provided</scope>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>${javafx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>${javafx.version}</version>
         </dependency>
     </dependencies>
 
@@ -71,19 +85,7 @@
     </build>
 
 
-    <scm>
-        <connection>scm:git:https://github.com/${github-user}/${github-repo}.git</connection>
-        <developerConnection>scm:git:git@github.com:${github-user}/${github-repo}.git</developerConnection>
-        <url>https://github.com/${github-user}/${github-repo}</url>
-        <tag>HEAD</tag>
-    </scm>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/drrename/drrename-commons</url>
-        </repository>
-    </distributionManagement>
+
 
 
 </project>
