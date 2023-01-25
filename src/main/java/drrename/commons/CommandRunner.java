@@ -17,12 +17,12 @@ public class CommandRunner {
             final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                log.debug("Process out: {}", line);
+                log.debug("sout: {}", line);
             }
             final BufferedReader bufferedReader2 = new BufferedReader(new InputStreamReader(process.getErrorStream()));
             String line2;
             while ((line2 = bufferedReader2.readLine()) != null) {
-                log.debug("Process err: {}", line2);
+                log.debug("serr: {}", line2);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
