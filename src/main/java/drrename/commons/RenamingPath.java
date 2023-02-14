@@ -40,8 +40,8 @@ public class RenamingPath {
 
     protected final BooleanProperty filtered;
 
-
     protected final StringProperty fileName;
+
     private final ChangeListener<? super Path> listener;
 
     public RenamingPath(final Path path) {
