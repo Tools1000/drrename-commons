@@ -32,4 +32,4 @@ jobs:
           distribution: ${{ env.JAVA_DISTRIBUTION }}
           cache: maven
       - name: Build with Maven
-        run: mvn -B verify
+        run: mvn -B -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=drrename -Dsonar.projectKey=DrRename_drrename-commons package jacoco:report sonar:sonar
