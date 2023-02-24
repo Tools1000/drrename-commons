@@ -1,6 +1,6 @@
 # Dr.Rename Commons
 
-[![Build](https://github.com/drrename/drrename-commons/actions/workflows/build.yml/badge.svg)](https://github.com/drrename/drrename-commons/actions/workflows/build.yml) [![License](https://img.shields.io/github/license/drrename/drrename-commons.svg)](https://github.com/drrename/drrename-commons/blob/master/LICENSE) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.drrename/drrename-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.drrename/drrename-commons)
+[![Build](https://github.com/tools1000/drrename-commons/actions/workflows/build.yml/badge.svg)](https://github.com/tools1000/drrename-commons/actions/workflows/build.yml) [![License](https://img.shields.io/github/license/tools1000/drrename-commons.svg)](https://github.com/tools1000/drrename-commons/blob/master/LICENSE) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.tools1000/drrename-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.tools1000/drrename-commons)
 
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Tools1000_drrename-commons&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Tools1000_drrename-commons)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Tools1000_drrename-commons&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Tools1000_drrename-commons)
