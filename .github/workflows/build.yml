@@ -33,4 +33,4 @@ jobs:
           distribution: ${{ env.JAVA_DISTRIBUTION }}
           cache: maven
       - name: Build with Maven
-        run: mvn -B -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=tools1000 -Dsonar.projectKey=tools1000_drrename-commons package jacoco:report sonar:sonar
+        run: mvn -B -Dsonar.host.url="https://sonarcloud.io" -Dsonar.organization=tools1000 -Dsonar.projectKey=Tools1000_drrename-commons package jacoco:report sonar:sonar
