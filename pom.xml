@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.drrename</groupId>
+    <groupId>io.github.tools1000</groupId>
     <artifactId>drrename-commons</artifactId>
     <version>0.0.5-SNAPSHOT</version>
     <name>Dr.Rename Commons</name>
     <description>Commonly used types for Dr.Rename projects.</description>
-    <url>https://github.com/DrRename/drrename-commons</url>
+    <url>https://github.com/tools1000/drrename-commons</url>
 
     <properties>
         <maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
-        <github-user>drrename</github-user>
+        <github-user>tools1000</github-user>
         <github-repo>drrename-commons</github-repo>
         <resource.delimiter>@</resource.delimiter>
         <maven.compiler.source>${java.version}</maven.compiler.source>
@@ -62,7 +62,9 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
