@@ -31,7 +31,7 @@ class FileRenamerTest {
     FileRenamer fileRenamer;
 
     @BeforeEach
-    void setUp() throws FileNotFoundException {
+    void setUp() throws IOException {
         fileRenamer = new FileRenamer();
         new BackupCreator().makeBackup(file.toFile());
     }
